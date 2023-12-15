@@ -9,6 +9,7 @@ urlpatterns = [
     path('feedback/',views.feedback ,name='feedback'),
     path('ourministries/',views.ourministries ,name='ourministries'),
     path('about/',views.about ,name='about'),
+    path('livestream/',views.livestream ,name='livestream'),
     path('preacher/',views.preacher ,name='preacher'),
     path('teaching/',views.teaching ,name='teaching'),
     path('success/',views.success ,name='success'),
