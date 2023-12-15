@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-1g1a#021$%2o&$=g%htb*5hwr4lx6plq68o9@itqz%t^e$v!j0
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['127.0.0.1','coc-ojodu.com']
+ALLOWED_HOSTS = ['127.0.0.1','churchofchristojodu.org']
 
 
 # Application definition
@@ -76,21 +76,24 @@ WSGI_APPLICATION = 'form.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
-#DATABASES = {
-    #'default': {
-      #  'ENGINE': 'django.db.backends.sqlite3',
-      #  'NAME': BASE_DIR / 'db.sqlite3',
-      #  'deterministic': True,
-   # }
-#}
+'''
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
+        'deterministic': True,
+    }
+}
+'''
+
 DATABASES = {
   'default':{  
-    'ENGINE': 'django.db.backends.postgresql',
-    'NAME' : 'railway',
+    'ENGINE': 'django.db.backends.postgresql_psycopg2',
+    'NAME' : 'church server',
     'USER' : 'postgres',
-    'PASSWORD': '1dB-ABb1Be34cG4*adac2bD5DgE-6fDG',
-    'HOST' : 'viaduct.proxy.rlwy.net',
-    'PORT':'46072'
+    'PASSWORD': 'daviper1',
+    'HOST' : 'localhost',
+    'PORT':'5432'
 }
 }
 

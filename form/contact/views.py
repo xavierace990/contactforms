@@ -79,7 +79,8 @@ def teaching(request):
 
 def success(request):
     return render(request, 'success.html')
-
+def livestream(request):
+    return render(request,'livestream.html')
 '''
 @login_required(login_url='user_login')
 def bulletin(request):
